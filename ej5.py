@@ -1,15 +1,15 @@
-'''F = 9/5 C + 32'''
-f = 1
-c=0
+#F = 9/5 C + 32
+fafaren_algo = 1
+celcius=0
 def Rep():
     for numero in range(0 , 13):
-        f = numero * 10
+        fafaren_algo = numero * 10
         
-        print(FaC(f))
+        print(FaC(fafaren_algo))
          
-def FaC(f):
-    c = (f - 32 )* 5/9
-    return f"aca esta {f} en celsius: {c}"
+def FaC(fafaren_algo):
+    celcius = (fafaren_algo - 32 )* 5/9
+    return f"aca esta {fafaren_algo} en celsius: {celcius}"
 
 
 Rep()

@@ -19,4 +19,8 @@ def DiasDelMes(año, eldiaquenoesdia):
             return eldiaquenoesdia[i - 1]
 
 
-print(DiasDelMes(int(input("dame el año: ")), dia))
+def LosDiasQueFaltanParaContarLaMoney(diaarestar, mes):
+    return DiasDelMes(int(input("dame el año brother: ")), dia) - diaarestar
+
+
+print(LosDiasQueFaltanParaContarLaMoney(int(input("Si queres dame un dia: ")), mesennumeritos))
