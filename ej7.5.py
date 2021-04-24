@@ -1,15 +1,18 @@
 diaL = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-mesennumeritos = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 
 
 def DiasQueFaltanParaIrATimesSquare(dia, mes, año, diaL):
     mesquefaltan = 12 - mes
+    #aca me fijo cuantos meses faltan para terminar el año
     faltanadaparaqueterminelacuentaloprometo = 0
     if mesquefaltan != 0:
         for i in (range(mes, 12)):
             casicuentacompletadelosdiasquefaltan = DiasDelMes(año, i, diaL)
             faltanadaparaqueterminelacuentaloprometo = faltanadaparaqueterminelacuentaloprometo + casicuentacompletadelosdiasquefaltan
+            #voy sumando los dias de los meses que faltan, y despues agrego el dia que me dijo
     lacuentacompleta = faltanadaparaqueterminelacuentaloprometo + LosDiasQueFaltanParaContarLaMoney(dia, mes, año, diaL)
+    # en el caso que estemos en diciembre entonces solo es necesario calcular lo que falta para terminar el mes,
+    # osea el 7.4
     return lacuentacompleta
 
 def DiasDelMes(año, mes, eldiaquenoesdia):
