@@ -6,6 +6,7 @@ mostrar por pantalla el porcentaje correspondiente a la cantidad de ejercicios r
 respecto a la cantidad de ejercicios del examen y una leyenda que indique si aprobó o no."""
 
 def HacerloTodoOtraVez(SioNo):
+    #aca me fijo si el usuario quiere usar otra vez el programa, osea tiene otro examen que corregir
     if SioNo == "si":
         ejerciciosTotales = int(input("en este examen cuantos ejercicios hay en total: "))
         porcentajeAprobado = int(input("y en este examen cual es el porcentaje de aprobado: "))
@@ -29,6 +30,7 @@ def Aprobacion(porcentajeAprobado, porcentajeExamen):
         HacerloTodoOtraVez(respuesta)
 def CalcularPorcentaje(ejerciciosTotales, porcentajeAprobado):
     ejercicionBien = int(input("cuantos ejercicios hizo bien: "))
+    #aca me fijo que los ejercicios que hizo bien sean positivos, ademas de contar el porcentaje
     if ejercicionBien >= 0:
         porcentajeExamen= (100/ejerciciosTotales) * ejercicionBien
         Aprobacion(porcentajeAprobado, porcentajeExamen)
