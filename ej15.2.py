@@ -1,10 +1,10 @@
 def EscribimeloBien(palabras):
     palabrasSeparadas = palabras.split()
-    lasletritas = ""
-    for i in palabrasSeparadas:
-        lasletritas = lasletritas + i[0]
-
-    return print(lasletritas.upper())
+    oracion = ""
+    for cadaPalabra in palabrasSeparadas:
+        oracion = oracion + cadaPalabra.capitalize() + " "
+        # le tengo que meter un espacio porque o sino esta todo juntito
+    return print(oracion)
 
 
 if 0 == 0:
