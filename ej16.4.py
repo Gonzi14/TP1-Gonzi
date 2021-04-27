@@ -1,6 +1,9 @@
 def EsPalindromogonomolotono(palabrita):
     validacion = True
     if palabrita == palabrita[::-1]:
+        # otra vez estuve intentando crear 3 variables para cada palabra y de esa manera poder ir fijandome la
+        # primera letra con la ultima, la segunda con la anteultima y despues vi en youtube que existia esta funcion
+        # y me acorto como 20 lineas
         validacion = True
     else:
         validacion = False
