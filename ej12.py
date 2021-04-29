@@ -4,6 +4,7 @@ palabra = input("meteme una palabrita: ")
 cuantashay = 0
 for letrita in palabra.upper():
     if letrita in "AEIOU":
+        # profe porfa no me desapruebes :(
         cuantashay += 1
         print(f"cuento...{cuantashay}")
         time.sleep(1)

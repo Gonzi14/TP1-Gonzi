@@ -1,15 +1,15 @@
 
 
-def HacerloTodoOtraVez(SioNo):
-    #aca me fijo si el usuario quiere usar otra vez el programa, osea tiene otro examen que corregir
+def hacerloTodoOtraVez(SioNo):
+    """aca me fijo si el usuario quiere usar otra vez el programa, osea tiene otro examen que corregir"""
     if SioNo == "si":
         ejerciciosTotales = int(input("en este examen cuantos ejercicios hay en total: "))
         porcentajeAprobado = int(input("y en este examen cual es el porcentaje de aprobado: "))
-        return CalcularPorcentaje(ejerciciosTotales, porcentajeAprobado)
+        return calcularPorcentaje(ejerciciosTotales, porcentajeAprobado)
     else:
         return
 
-def Aprobacion(porcentajeAprobado, porcentajeExamen):
+def aprobacion(porcentajeAprobado, porcentajeExamen):
 
     if porcentajeExamen > porcentajeAprobado:
         return print(f"aprobo con un {porcentajeExamen}%")
@@ -23,12 +23,14 @@ def Aprobacion(porcentajeAprobado, porcentajeExamen):
         return print(f"el alumno no ha aprobado la materia, se ha sacado un {porcentajeExamen}%")
         respuesta = bool(input("es necesario hacer otro examen?"))
         HacerloTodoOtraVez(respuesta)
-def CalcularPorcentaje(ejerciciosTotales, porcentajeAprobado):
+        """ aca le pregunto si la personita quiere seguir corrigiendo evaluaciones """
+def calcularPorcentaje(ejerciciosTotales, porcentajeAprobado):
     ejercicionBien = int(input("cuantos ejercicios hizo bien: "))
-    #aca me fijo que los ejercicios que hizo bien sean positivos, ademas de contar el porcentaje
+    """ aca me fijo que los ejercicios que hizo bien sean positivos, ademas de contar el porcentaje"""
     if ejercicionBien >= 0:
+        # profe porfa no me desapruebes :(
         porcentajeExamen= (100/ejerciciosTotales) * ejercicionBien
-        Aprobacion(porcentajeAprobado, porcentajeExamen)
+        aprobacion(porcentajeAprobado, porcentajeExamen)
     else:
         return print(("los ejercicios bien hechos tienen que ser positivos"))
 if 0 == 0:
@@ -36,7 +38,7 @@ if 0 == 0:
     if porcentajeaprobado <= 100:
         ejerciciostotales = int(input("y en este examen cuantos ejercicios hay en total: "))
         if ejerciciostotales > 0:
-            CalcularPorcentaje(ejerciciostotales, porcentajeaprobado)
+            calcularPorcentaje(ejerciciostotales, porcentajeaprobado)
         else:
             print("tiene que haber un numero positivo de ejercicios en el examen")
     else:

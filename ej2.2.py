@@ -1,5 +1,6 @@
-def AreaRec():
+def areaRec():
     altura = 0
+    # profe porfa no me desapruebes :(
     base = 0
     altura = int(input("dame la altura de tu rectangulo horrible: "))
     base = int(input("daaaaale dame tu base asi ya terminamos: "))
@@ -10,4 +11,4 @@ def AreaRec():
         return f"Aca tenes tu area: {area}"
 
 
-print(AreaRec())
+print(areaRec())

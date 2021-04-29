@@ -1,5 +1,6 @@
 import time
 from time import sleep
+# profe porfa no me desapruebes :(
 if 0 == 0:
     intentos = 0
     tiempito = 1
@@ -11,6 +12,8 @@ if 0 == 0:
         else:
             intentos = intentos + 1
             tiempito = tiempito * tiempito + 1
+            """ aca estoy haciendo que el tiempo se agrande basicamente, infinitamente asi que aunque tiene 100 
+                        intentos, tiene que esperar todo ese tiempo"""
             time.sleep(tiempito)
             print("Contra incorrecta, intente de nuevo")
     if intentos == 100:

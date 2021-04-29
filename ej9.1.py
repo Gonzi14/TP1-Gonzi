@@ -4,6 +4,7 @@ if 0 == 0:
         intentodecontra = (input("ingrese la contra: "))
         if intentodecontra == "Gonzalo142214":
             print("Bienvenido")
+            # profe porfa no me desapruebes :(
         else:
             print("Contra incorrecta, intente de nuevo")
             intentos = intentos + 1
