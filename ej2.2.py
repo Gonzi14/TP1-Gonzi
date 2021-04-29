@@ -1,4 +1,4 @@
-def areaRec():
+def areaDelRectangulo():
     altura = 0
     # profe porfa no me desapruebes :(
     base = 0
@@ -11,4 +11,4 @@ def areaRec():
         return f"Aca tenes tu area: {area}"
 
 
-print(areaRec())
+print(areaDelRectangulo())

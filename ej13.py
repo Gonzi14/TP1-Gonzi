@@ -2,7 +2,7 @@ import time
 from time import sleep
 palabra = input("meteme una palabrita: ")
 print("meteme la palabra que me diste recien PERO EN MAYUSCULAS")
-time.sleep(2)
+time.sleep(1.3)
 palabraENMAYUSCULAS = input("EN MAYUSCULAS: ")
 palabra1 = palabra.upper()
 if palabra1 == palabraENMAYUSCULAS:

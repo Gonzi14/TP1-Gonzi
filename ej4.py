@@ -3,10 +3,10 @@ fafaren_algo = int(input("dame los farenheit: "))
 celcius = 0
 
 
-def faC(fafaren_algo):
+def farenheitACelcius(fafaren_algo):
     celcius = (fafaren_algo - 32) * 5 / 9
     return f"aca esta la misma temperatura en celsius: {celcius}"
 # profe porfa no me desapruebes :(
 
 
-print(faC(fafaren_algo))
+print(farenheitACelcius(fafaren_algo))

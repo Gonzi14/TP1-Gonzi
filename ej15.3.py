@@ -1,4 +1,4 @@
-def escribimeloBien(palabras, laLetrita):
+def elegirPalabrasEspecifica(palabras, laLetrita):
     palabrasSeparadas = palabras.split()
     oracion = ""
     for cadaPalabra in palabrasSeparadas:
@@ -14,4 +14,4 @@ def escribimeloBien(palabras, laLetrita):
 if 0 == 0:
     palabras = input("escribime una oracion: ")
     letraEspecial = input("escribime la letra especial: ")
-    escribimeloBien(palabras, letraEspecial)
+    elegirPalabrasEspecifica(palabras, letraEspecial)

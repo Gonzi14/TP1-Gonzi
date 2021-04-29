@@ -1,4 +1,4 @@
-def perCal():
+def calcularElPerimetro():
     altura = int(input("capo, damela altura de tu rectangulo todo hermoso: "))
     # profe porfa no me desapruebes :(
     base = int(input("y ahora dame la base y ya estariamos: "))
@@ -9,4 +9,4 @@ def perCal():
         return f"el perimetro de tu rectangulo bellisimo es {perimetro}"
 
 
-print(perCal())
+print(calcularElPerimetro())

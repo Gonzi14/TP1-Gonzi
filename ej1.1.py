@@ -1,6 +1,6 @@
-name = input("ingrese su nombre buen señor")
+nombre = input("ingrese su nombre buen señor: ")
 # profe porfa no me desapruebes :(
-if name == "":
+if nombre == "":
     print("no tiene nombre? que rareza...")
 else:
-    print("hermoso nombre")
+    print(f"hermoso nombre {nombre}")

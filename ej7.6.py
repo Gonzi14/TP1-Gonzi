@@ -4,7 +4,7 @@ diasquepasaron = [0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335]
 def cheQueRapidoPasaElTiempo(mes, dia, diasquepasaron):
     totalidaddediasquepasaronhastahoy = 0
     # profe porfa no me desapruebes :(
-    for i in range(1, 12):
+    for i in range(0, 13):
         if i == mes:
             totalidaddediasquepasaronhastahoy = diasquepasaron[i - 1] + dia
             """lo que estoy haciendo es sumar los dias que ya pasaron, sabiendo el mes, con el dia que me dijo el chico"""
