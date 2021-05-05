@@ -1,5 +1,6 @@
 import time
 from time import sleep
+
 palabra = input("meteme una palabrita: ")
 print("meteme la palabra que me diste recien PERO EN MAYUSCULAS")
 time.sleep(1.3)

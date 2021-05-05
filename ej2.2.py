@@ -9,6 +9,6 @@ def areaDelRectangulo():
         return f"como te gustan los cuadrados eh, jugas al minecraft? {area}"
     else:
         return f"Aca tenes tu area: {area}"
-
+    """aca lo que estoy haciendo es pedirle la base y la altura para poder devolverle el area"""
 
 print(areaDelRectangulo())

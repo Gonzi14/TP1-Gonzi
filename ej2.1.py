@@ -7,6 +7,6 @@ def calcularElPerimetro():
         return f"como que me diste un cuadrado pero bue, aca tenes su perimetro {perimetro} "
     else:
         return f"el perimetro de tu rectangulo bellisimo es {perimetro}"
-
+    """aca lo que estoy haciendo es pedirle la base y la altura para poder devolverle el perimetro"""
 
 print(calcularElPerimetro())

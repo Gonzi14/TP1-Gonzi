@@ -1,5 +1,6 @@
 import random
 from random import randrange
+
 elNumeroRandom = (random.randrange(50))
 print(elNumeroRandom)
 """ ponele que "crea" un numero alelatorio"""

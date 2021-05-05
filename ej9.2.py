@@ -1,12 +1,14 @@
 import time
 from time import sleep
+
 # profe porfa no me desapruebes :(
 if 0 == 0:
+    contraVerdadera = "Gonzalo142214"
     intentos = 0
     tiempito = 1
     while intentos != 100:
         intentodecontra = (input("ingrese la contra: "))
-        if intentodecontra == "Gonzalo142214":
+        if intentodecontra == contraVerdadera:
             print("Bienvenido")
             break
         else:

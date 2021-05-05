@@ -1,5 +1,6 @@
 numerito = int(input("dame el numerito: "))
 numerito2 = numerito
+
 for i in range(1, numerito):
     # profe porfa no me desapruebes :(
     numerito2 = numerito2 * i

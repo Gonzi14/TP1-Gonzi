@@ -1,5 +1,6 @@
 import time
 from time import sleep
+
 palabra = input("meteme una palabrita: ")
 cuantashay = 0
 for letrita in palabra.upper():

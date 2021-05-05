@@ -26,7 +26,7 @@ def diasDelMes(ano, mes, eldiaquenoesdia):
                  empiezan con cero """
 
     else:
-        eldiaquenoesdia["2"] = [28]
+        eldiaquenoesdia[2] = [28]
     for i in range(1, 13):
         if i == mes:
             return eldiaquenoesdia[i - 1]

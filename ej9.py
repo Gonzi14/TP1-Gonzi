@@ -1,8 +1,10 @@
 def seguridaddeWindows(contra):
-    if contra == "Gonzalo142214":
+    contraVerdadera = "Gonzalo142214"
+    if contra == contraVerdadera:
         return "Bienvenido"
     else:
         return "Contra incorrecta, apagando el equipo..."
+
 
 # profe porfa no me desapruebes :(
 if 0 == 0:

@@ -1,6 +1,5 @@
 # F = 9/5 C + 32
 fafaren_algo = int(input("dame los farenheit: "))
-celcius = 0
 
 
 def farenheitACelcius(fafaren_algo):

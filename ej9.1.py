@@ -1,8 +1,9 @@
 if 0 == 0:
+    contraVerdadera = "Gonzalo142214"
     intentos = 0
     while intentos != 100:
         intentodecontra = (input("ingrese la contra: "))
-        if intentodecontra == "Gonzalo142214":
+        if intentodecontra == contraVerdadera:
             print("Bienvenido")
             # profe porfa no me desapruebes :(
         else:

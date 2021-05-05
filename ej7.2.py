@@ -13,10 +13,10 @@ def diasDelMes(ano, eldiaquenoesdia):
                  empiezan con cero """
     # profe porfa no me desapruebes :(
     else:
-        eldiaquenoesdia = [28]
-    for i in range(1, 13):
-        if i == mes:
-            return eldiaquenoesdia[i - 1]
+        dia[1] = 28
+        for i in range(1, 13):
+            if i == mes:
+                return eldiaquenoesdia[i - 1]
 
 
 print(diasDelMes(int(input("dame el ano: ")), dia))

@@ -12,7 +12,7 @@ def repeticion():
 
 def farenheitACelcius(fafaren_algo):
     celcius = (fafaren_algo - 32) * 5 / 9
-    return f"aca esta {fafaren_algo} en celsius: {celcius}"
-
+    return f"aca esta {fafaren_algo} en celsius: {str(celcius)[:5]}"
+    """aca lo que estoy haciendo es ir mostrando de 0 a 130 farenheit a celcius en forma de lista"""
 
 repeticion()
