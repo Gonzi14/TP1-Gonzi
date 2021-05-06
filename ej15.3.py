@@ -2,8 +2,7 @@ def elegirPalabrasEspecifica(palabras, laLetrita):
     palabrasSeparadas = palabras.split()
     oracion = ""
     for cadaPalabra in palabrasSeparadas:
-        if cadaPalabra[0] == laLetrita or cadaPalabra[0].capitalize() == laLetrita or cadaPalabra[0] == \
-                laLetrita.capitalize():
+        if cadaPalabra[0].capitalize() == laLetrita.upper():
             """ aca me voy fijando si cada palabra empieza con la letra especifica, fijandome en la letra numero 0,
              osea primera, de cada palabra """
             # profe porfa no me desapruebes :(

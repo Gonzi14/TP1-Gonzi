@@ -1,20 +1,27 @@
-vocalesNormales = "AEIOU"
-vocalesMovidasUnLugar = "EIOUA"
+vocales = {
+    "a": "e",
+    "e": "i",
+    "i": "o",
+    "o": "u",
+    "u": "a",
+    "A": "E",
+    "E": "I",
+    "I": "O",
+    "O": "U",
+    "U": "A",
+}
 
 
-def movemeLasVocales(palabritas, vocales, vocalesMovidas):
+def movemeLasVocales(palabritas, vocales):
     palabrasMovidas = ""
-    cambio = str.maketrans(vocales, vocalesMovidas)
     for cadaLetra in palabritas:
-        cadaLetra = cadaLetra.upper()
-        palabrasMovidas = palabrasMovidas + cadaLetra.translate(cambio)
-        # profe porfa no me desapruebes :(
-        """ estas son cositas q aprendi en un videito de youtube, xq estuve intentando de hacer un diccionario y todo
-          eso pero me parecia muuuy largo lo que me quedaba y asi me parece que queda mejor :) """
-        palabrasMovidas = palabrasMovidas.capitalize()
+        if cadaLetra in "AEIOUaeiou":
+            cadaLetra = vocales[str(cadaLetra)]
+        palabrasMovidas = palabrasMovidas + cadaLetra
     return print(palabrasMovidas)
+
 
 
 if 0 == 0:
     palabras = input("escribime una oracion: ")
-    movemeLasVocales(palabras, vocalesNormales, vocalesMovidasUnLugar)
+    movemeLasVocales(palabras, vocales)
